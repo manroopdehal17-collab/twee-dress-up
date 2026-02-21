@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+      <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+<title>TWEE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+</style>
+</head>
+<body>
+
+ <div class="header">
+  <h1>Twee Dress Up</h1>
+  <p>Figure out the perfect outfit!</p>
+</div> 
+
+<div class="navbar">
+  <a href="#">Dress Up</a>
+  <a href="#">History</a>
+  <a href="#">How To Dress Twee</a>
+  <a href="#" class="right">About Me</a>
+</div>
+
+
+
+<div class="row">
+  <div class="main">CLICK ON THE CLOTHING TO MAKE AN OUTFIT!</div>
+
+</div>
+<div class="game-container">
+        <div class="doll-area" id="dollArea">
+            <!-- Character base image goes here -->
+            <img src="images/doll-base.png" alt="Character Base" class="doll-base">
+        </div>
+        <div class="wardrobe" id="wardrobe">
+            <!-- Clothing items will be placed here -->
+            <img src="images/dress1.png" alt="Dress 1" class="clothing-item" draggable="true" data-type="dress">
+            <img src="images/hat1.png" alt="Hat 1" class="clothing-item" draggable="true" data-type="hat">
+            <!-- Add more clothing items -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

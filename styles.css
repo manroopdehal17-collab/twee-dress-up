@@ -1,0 +1,81 @@
+/* styles.css file */
+.header {
+padding: 40px;
+text-align: center;
+background-image: url(https://i.pinimg.com/1200x/72/87/59/728759150b0ce3fe712e6e3a8c89489e.jpg) ;
+background-size: 30%;
+color: rgb(251, 163, 195)
+ }
+
+
+.header h1 {
+    font-size: 40px;
+}
+
+.navbar {
+overflow: hidden;
+background-color: rgb(108, 120, 19);
+
+}
+
+.navbar a {
+float:left;
+display:block;
+color: rgb(245, 173, 199);
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+}
+.navbar a.right {
+float: right;
+}
+
+.navbar a:hover {
+background-color: grey;
+color: rgb(124, 36, 90);
+
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main {
+  flex: 10%; /* Set the width of the main content */
+  background-color: rgb(255, 255, 255); /* White background color */
+  padding: 20px; /* Some padding */
+}
+
+.game-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.doll-area {
+    width: 300px;
+    height: 500px;
+    border: 2px solid black;
+    position: relative;
+    /* Add background image for the doll base here if needed */
+}
+
+.wardrobe {
+    width: 200px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.clothing-item {
+    width: 80px; /* Adjust size as needed */
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+
+* {
+
+
+}
