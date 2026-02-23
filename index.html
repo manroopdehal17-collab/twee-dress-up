@@ -27,8 +27,6 @@
   <a href="#" class="right">About Me</a>
 </div>
 
-
-
 <div class="row">
   <div class="main">CLICK ON THE CLOTHING TO MAKE AN OUTFIT!</div>
 
@@ -40,11 +38,57 @@
           </div>
         <div class="wardrobe" id="wardrobe">
             <!-- Clothing items will be placed here -->
-            <img src="images/dress1.png" alt="Dress 1" class="clothing-item" draggable="true" data-type="dress">
+           
+<div class="selection" id="selection">
+            <img src="https://www.vhv.rs/dpng/d/603-6030058_aesthetic-shirts-cute-aesthetic-tank-top-png-transparent.png" alt="Dress 1" class="clothing-item" draggable="true" data-type="dress">
+            </div>
+            <div class="selection" id="selection">
             <img src="images/hat1.png" alt="Hat 1" class="clothing-item" draggable="true" data-type="hat">
+            </div>
             <!-- Add more clothing items -->
         </div>
+        
     </div>
     <script src="script.js"></script>
+
+
+<style>
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  
+    @keyframes spin2 {
+      0% {
+        stroke-dasharray: 1, 800;
+        stroke-dashoffset: 0;
+      }
+      50% {
+        stroke-dasharray: 400, 400;
+        stroke-dashoffset: -200px;
+      }
+      100% {
+        stroke-dasharray: 800, 1;
+        stroke-dashoffset: -800px;
+      }
+    }
+  
+    .spin2 {
+      transform-origin: center;
+      animation: spin2 6.2s ease-in-out infinite,
+        spin 6s linear infinite;
+      animation-direction: alternate;
+    }
+  </style>
+        
+  <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+    <circle class="spin2" cx="400" cy="400" fill="none"
+      r="102" stroke-width="35" stroke="#709a7a"
+      stroke-dasharray="641 1400"
+      stroke-linecap="round" />
+  </svg>
+  
+
 </body>
 </html>
