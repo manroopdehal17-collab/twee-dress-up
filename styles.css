@@ -82,6 +82,14 @@ color: rgb(124, 36, 90);
     margin-left: 50px;
 }
 
+#container3D canvas {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 * {
 
 

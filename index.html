@@ -1,7 +1,6 @@
  <!DOCTYPE html>
 <html lang="en">
 <head>
-      <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 <title>TWEE</title>
 <meta charset="UTF-8">
@@ -29,37 +28,12 @@
 
 <div class="row">
   <div class="main">CLICK ON THE CLOTHING TO MAKE AN OUTFIT!</div>
-<script>
-  AFRAME.registerComponent('modify-materials', {
-    init: function () {
-      // Wait for model to load.
-      this.el.addEventListener('model-loaded', () => {
-        // Grab the mesh / scene.
-        const obj = this.el.getObject3D('mesh');
-        // Go over the submeshes and modify materials we want.
-        obj.traverse(node => {
-          if (node.name.indexOf('ship') !== -1) {
-            node.material.color.set('red');
-          }
-        });
-      });
-    }
-  });
-</script>
 
-<a-scene>
-  <a-assets>
-    <a-asset-item id="myModel" src="MODEL.gltf"></a-asset-item>
-  </a-assets>
-  <a-entity gltf-model="#myModel" modify-materials></a-entity>
-</a-scene>
 
-<a-entity gltf-model="#myModel" scale="0.01 0.01 0.01"></a-entity>
 
 </div>
 <div class="game-container">
         <div class="doll-area" id="dollArea">
-          <a-scene>
       <!-- Asset Management System to load efficiently -->
       <a-assets>
         <a-asset-item id="myModel" src="MODEL.gltf"></a-asset-item>
@@ -118,6 +92,7 @@
       stroke-linecap="round" />
   </svg>
   
+<script type="module" src="script.js"></script>
 
 </body>
 </html>
