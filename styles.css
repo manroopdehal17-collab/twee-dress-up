@@ -21,7 +21,7 @@ background-color: rgb(108, 120, 19);
 .navbar a {
 float:left;
 display:block;
-color: rgb(245, 173, 199);
+color: #f5adc7;
 text-align: center;
 padding: 14px 20px;
 text-decoration: none;
@@ -48,33 +48,21 @@ color: rgb(124, 36, 90);
 }
 
 .game-container {
-    display: flex;
+    margin-left: 40px;
     justify-content: space-around;
     width: 100%;
     margin-top: 20px;
 }
 
 .doll-area {
-    width: 300px;
+    background-color: #f5adc7;
+    width: 400px;
     height: 500px;
     border: 2px solid black;
     position: relative;
     /* Add background image for the doll base here if needed */
 }
 
-.doll-base {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.wardrobe {
-    width: 500px;
-    border: 2px solid black;
-    padding: 10px;
-}
 
 .clothing-item {
     border-width: 100px;
@@ -83,35 +71,21 @@ color: rgb(124, 36, 90);
     margin-bottom: 0px;
 }
 
-.selection {
-    display: block;
-    width: 250px;
-    height: 170px;
+
+.container {
+    margin-top: -502px;
+     margin-left: 440px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+.container div {;
     border: 1px solid black;
-    justify-content: center;
-    margin-top: 10px;
-    margin-left: 10px;
-}
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    margin-right: 5px;
 
-.selection1 {
-    display: block;
-    width: 250px;
-    height: 170px;
-    border: 1px solid black;
-    justify-content: center;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-#container3D canvas {
-    width: 100vw !important;
-    height: 100vh !important;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-* {
 
 
 }
