@@ -33,14 +33,29 @@
 </div>
 <div class="game-container">
         <div class="doll-area" id="dollArea">
-      <!-- Asset Management System to load efficiently -->
-      <a-scene id="scene" embedded>
+          <!-- The A-Frame scene will be embedded here-->
+          <a-scene id="scene" embedded>
             <a-assets>
                 <a-asset-item id="girl" src="girl.glb"></a-asset-item>
                 <a-asset-item id="jeans" src="jeans.glb"></a-asset-item>
-            </a-assets>
+                <a-asset-item id="stripedshirt" src="stripedshirt.glb"></a-asset-item>
+                <a-asset-item id="blueshoes" src="blueshoes.glb"></a-asset-item>
+                <a-asset-item id="plaidskirt" src="plaidskirt.glb"></a-asset-item>
+                <a-asset-item id="plaidtop" src="plaidtop.glb"></a-asset-item>
+                <a-asset-item id="beigeshoes" src="beigeshoes.glb"></a-asset-item>
+                <a-asset-item id="tanktop" src="tanktop.glb"></a-asset-item>
+                <a-asset-item id="longskirt" src="longskirt.glb"></a-asset-item>
+                <a-asset-item id="whiteshoes" src="whiteshoes.glb"></a-asset-item>
+              </a-assets>
             <a-entity gltf-model="#girl" position="0 2.5 -4" rotation="0 -90 0" scale="0.5 0.5 0.5" modify-materials></a-entity>
-            <a-entity gltf-model="#jeans" position="3.4 2 -4" rotation="0 -90 0" scale="0.5 0.5 0.5" modify-materials visible="false"></a-entity>
+            <a-entity gltf-model="#jeans" position="0 2.5 -4" rotation="0 -90 0" scale="0.5 0.5 0.5" modify-materials visible="false"></a-entity>
+            <a-entity gltf-model="#stripedshirt" position="0 2.5 -4" rotation="0 -90 0" scale="0.5 0.5 0.5" modify-materials visible="false"></a-entity>
+            <a-entity gltf-model="#plaidskirt" position="0 2.5 -4" rotation="0 -90 0" scale="0.5 0.5 0.5" modify-materials visible="false"></a-entity>
+            <a-entity gltf-model="#plaidtop" position="0 2.5 -4" rotation="0 -90 0" scale="0.5 0.5 0.5" modify-materials visible="false"></a-entity>
+            <a-entity gltf-model="#beigeshoes" position="0 2.5 -4" rotation="0 -90 0" scale="0.5 0.5 0.5" modify-materials visible="false"></a-entity>
+            <a-entity gltf-model="#tanktop" position="0 2.5 -4" rotation="0 -90 0" scale="0.5 0.5 0.5" modify-materials visible="false"></a-entity>
+            <a-entity gltf-model="#longskirt" position="0 2.5 -4" rotation="0 -90 0" scale="0.5 0.5 0.5" modify-materials visible="false"></a-entity>
+            <a-entity gltf-model="#whiteshoes" position="0 2.5 -4" rotation="0 -90 0" scale="0.5 0.5 0.5" modify-materials visible="false"></a-entity>
             <a-entity camera look-controls="enabled: false" orbit-controls="target: 0 2 -4; minDistance: 4; maxDistance: 5; initialPosition: 0 3 5; rotateSpeed: 0.5"></a-entity>
       </a-scene>
 
