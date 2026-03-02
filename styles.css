@@ -67,10 +67,17 @@ color: rgb(124, 36, 90);
 }
 
 .title {
+    background-color: rgb(108, 120, 19);
     margin-top: -10px;
     padding: 10px 20px;
     font-size: 30px;
     cursor: pointer;
+    border: 0.5px solid black;
+}
+
+.title:hover {
+    background-color: rgb(141, 150, 76);
+    color: white;
 }
 
 .hidden {
@@ -85,12 +92,15 @@ color: rgb(124, 36, 90);
     grid-template-columns: auto auto auto;
     padding: 10px;
 }
-.container div {;
-    background-color: #f5adc7;
-    border: 1px solid black;
-    padding: 10px;
-    font-size: 30px;
-    text-align: center;
-    margin-right: 5px;
 
+.clothes {
+    background-color: #f5adc7;
+    padding: 10px 20px;
+    border: 0.5px solid black;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.clothes:hover {
+    background-color: rgb(124, 36, 90);
 }
