@@ -48,37 +48,39 @@
                 <a-asset-item id="whiteshoes" src="whiteshoes.glb"></a-asset-item>
               </a-assets>
             <a-entity gltf-model="#girl" position="0 2.5 -4" rotation="0 -90 0" scale="0.5 0.5 0.5" modify-materials></a-entity>
-            <a-entity gltf-model="#jeans" position="0 2.5 -4" rotation="0 -90 0" scale="0.5 0.5 0.5" modify-materials visible="false"></a-entity>
-            <a-entity gltf-model="#stripedshirt" position="0 2.5 -4" rotation="0 -90 0" scale="0.5 0.5 0.5" modify-materials visible="false"></a-entity>
-            <a-entity gltf-model="#plaidskirt" position="0 2.5 -4" rotation="0 -90 0" scale="0.5 0.5 0.5" modify-materials visible="false"></a-entity>
-            <a-entity gltf-model="#plaidtop" position="0 2.5 -4" rotation="0 -90 0" scale="0.5 0.5 0.5" modify-materials visible="false"></a-entity>
-            <a-entity gltf-model="#beigeshoes" position="0 2.5 -4" rotation="0 -90 0" scale="0.5 0.5 0.5" modify-materials visible="false"></a-entity>
-            <a-entity gltf-model="#tanktop" position="0 2.5 -4" rotation="0 -90 0" scale="0.5 0.5 0.5" modify-materials visible="false"></a-entity>
-            <a-entity gltf-model="#longskirt" position="0 2.5 -4" rotation="0 -90 0" scale="0.5 0.5 0.5" modify-materials visible="false"></a-entity>
-            <a-entity gltf-model="#whiteshoes" position="0 2.5 -4" rotation="0 -90 0" scale="0.5 0.5 0.5" modify-materials visible="false"></a-entity>
+            <a-entity id="jeans" gltf-model="#jeans" position="0 2.5 -4" rotation="0 -90 0" scale="0.5 0.5 0.5" modify-materials visible="false"></a-entity>
+            <a-entity id="stripedshirt" gltf-model="#stripedshirt" position="0 2.5 -4" rotation="0 -90 0" scale="0.5 0.5 0.5" visible="false"></a-entity>
+            <a-entity id="blueshoes" gltf-model="#blueshoes" position="0 2.5 -4" rotation="0 -90 0" scale="0.5 0.5 0.5" modify-materials visible="false"></a-entity>
+            <a-entity id="plaidskirt" gltf-model="#plaidskirt" position="0 2.5 -4" rotation="0 -90 0" scale="0.5 0.5 0.5" modify-materials visible="false"></a-entity>
+            <a-entity id="plaidtop" gltf-model="#plaidtop" position="0 2.5 -4" rotation="0 -90 0" scale="0.5 0.5 0.5" modify-materials visible="false"></a-entity>
+            <a-entity id="beigeshoes" gltf-model="#beigeshoes" position="0 2.5 -4" rotation="0 -90 0" scale="0.5 0.5 0.5" modify-materials visible="false"></a-entity>
+            <a-entity id="tanktop" gltf-model="#tanktop" position="0 2.5 -4" rotation="0 -90 0" scale="0.5 0.5 0.5" modify-materials visible="false"></a-entity>
+            <a-entity id="longskirt" gltf-model="#longskirt" position="0 2.5 -4" rotation="0 -90 0" scale="0.5 0.5 0.5" modify-materials visible="false"></a-entity>
+            <a-entity id="whiteshoes" gltf-model="#whiteshoes" position="0 2.5 -4" rotation="0 -90 0" scale="0.5 0.5 0.5" modify-materials visible="false"></a-entity>
             <a-entity camera look-controls="enabled: false" orbit-controls="target: 0 2 -4; minDistance: 4; maxDistance: 5; initialPosition: 0 3 5; rotateSpeed: 0.5"></a-entity>
       </a-scene>
 
             <div class="wardrobe" id="wardrobe">
             <!-- Clothing items will be placed here -->
-          
             <div class="container">
-  <div>Tops</div>
-  <div>Bottoms</div>
-  <div>Shoes</div>
-  <div><img src="striped shirt.png" alt="Striped Shirt" class="clothing-item"visible="true" data-type="shirt"></div>
-  <div><img src="jeans.png" alt="Hat 1" class="clothing-item" draggable="true" data-type="hat"></div>
-  <div><img src="Blueshoes.png" alt="Hat 1" class="clothing-item" draggable="true" data-type="hat"></div>
-  <div>4</div>
-  <div>5</div>
+  <button class="title">Tops</button>
+  <button class="title">Bottoms</button>
+  <button class="title">Shoes</button>
+  <button class="clothes"><img id="stripedshirtButton" src="stripedshirt.png" alt="Striped Shirt" class="clothing-item" data-type="tops" data-model="stripedshirt"></button>
+  <button class="clothes"><img src="jeans.png" alt="jeans" class="clothing-item" data-type="bottoms" data-model="jeans"></button>
+  <button><img src="Blueshoes.png" alt="blueshoes" class="clothing-item" data-type="shoes" data-model="blueshoes"></button>
+  <button><img src="plaidtop.png" alt="plaidtop" class="clothing-item" data-type="tops" data-model="plaidtop"></button>
+  <button><img src="plaidskirt.png" alt="plaidskirt" class="clothing-item" data-type="bottoms" data-model="plaidskirt"></button>
+  <button><img src="beigeshoes.png" alt="beigeshoes" class="clothing-item" data-type="shoes" data-model="beigeshoes"></button>
+  <button><img src="tanktop.png" alt="tanktop" class="clothing-item" data-type="tops" data-model="tanktop"></button>
+  <button><img src="longskirt.png" alt="longskirt" class="clothing-item" data-type="bottoms" data-model="longskirt"></button>
+  <button><img src="whiteshoes.png" alt="whiteshoes" class="clothing-item" data-type="shoes" data-model="whiteshoes"></button>
 </div>
     </div>
+
+    <button id="resetButton">Reset Outfit</button>
+
     <script src="script.js"></script>
-
-
-
-  
-<script type="module" src="script.js"></script>
 
 </body>
 </html>

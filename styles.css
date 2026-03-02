@@ -54,6 +54,7 @@ color: rgb(124, 36, 90);
     height: 500px;
     border: 2px solid black;
     position: relative;
+    margin-left: 30px;
     /* Add background image for the doll base here if needed */
 }
 
@@ -63,6 +64,13 @@ color: rgb(124, 36, 90);
     width: 200px; /* Adjust size as needed */
     cursor: pointer;
     margin-bottom: 0px;
+}
+
+.title {
+    margin-top: -10px;
+    padding: 10px 20px;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 
