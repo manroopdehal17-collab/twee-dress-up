@@ -73,6 +73,10 @@ color: rgb(124, 36, 90);
     cursor: pointer;
 }
 
+.hidden {
+    display: none; /* Removes the element from the document flow completely */
+    /* Alternatively, use visibility: hidden; if you want the element to retain its space on the page */
+}
 
 .container {
     margin-top: -502px;
