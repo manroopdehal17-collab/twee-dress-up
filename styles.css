@@ -4,18 +4,44 @@ padding: 40px;
 text-align: center;
 background-image: url(https://i.pinimg.com/1200x/72/87/59/728759150b0ce3fe712e6e3a8c89489e.jpg) ;
 background-size: 30%;
-color: rgb(251, 163, 195)
- }
+color: rgb(251, 163, 195);
+position: relative;
+-webkit-animation-name: animatebottom;
+-webkit-animation-duration: 1s;
+animation-name: animatebottom;
+animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+
 
 
 .header h1 {
     font-size: 40px;
+    position: relative;
+-webkit-animation-name: animatebottom;
+-webkit-animation-duration: 1s;
+animation-name: animatebottom;
+animation-duration: 1s
 }
 
 .navbar {
 overflow: hidden;
 background-color: rgb(108, 120, 19);
-
+position: relative;
+-webkit-animation-name: animatebottom;
+-webkit-animation-duration: 1s;
+animation-name: animatebottom;
+animation-duration: 1s
 }
 
 .navbar a {
@@ -25,26 +51,39 @@ color: #f5adc7;
 text-align: center;
 padding: 14px 20px;
 text-decoration: none;
+position: relative;
 }
+
 .navbar a.right {
 float: right;
+position: relative;
 }
 
 .navbar a:hover {
 background-color: grey;
 color: rgb(124, 36, 90);
-
+position: relative;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+-webkit-animation-name: animatebottom;
+-webkit-animation-duration: 1s;
+animation-name: animatebottom;
+animation-duration: 1s
 }
 
 .main {
-  flex: 10%; /* Set the width of the main content */
-  background-color: rgb(255, 255, 255); /* White background color */
-  padding: 20px; /* Some padding */
+  flex: 10%;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
 }
 
 
@@ -55,15 +94,24 @@ color: rgb(124, 36, 90);
     border: 2px solid black;
     position: relative;
     margin-left: 30px;
-    /* Add background image for the doll base here if needed */
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
 }
 
 
 .clothing-item {
     border-width: 100px;
-    width: 200px; /* Adjust size as needed */
+    width: 200px;
     cursor: pointer;
     margin-bottom: 0px;
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
 }
 
 .title {
@@ -73,16 +121,31 @@ color: rgb(124, 36, 90);
     font-size: 30px;
     cursor: pointer;
     border: 0.5px solid black;
+    color:#f5adc7;
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
 }
 
 .title:hover {
     background-color: rgb(141, 150, 76);
     color: white;
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
 }
 
 .hidden {
-    display: none; /* Removes the element from the document flow completely */
-    /* Alternatively, use visibility: hidden; if you want the element to retain its space on the page */
+    display: none; 
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
 }
 
 .container {
@@ -91,6 +154,11 @@ color: rgb(124, 36, 90);
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 10px;
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
 }
 
 .clothes {
@@ -99,13 +167,44 @@ color: rgb(124, 36, 90);
     border: 0.5px solid black;
     cursor: pointer;
     font-size: 16px;
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
 }
 
 .clothes:hover {
     background-color: rgb(124, 36, 90);
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
 }
 
-.reset {
-    margin-top: -1280px;
+.resetButton {
     background-color: rgb(108, 120, 19);
+    border: none;
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 20px;
+    scale: 1.5;
+    color: #f5adc7;
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
 }
+
+.spin {
+    transform-origin: center;
+    animation: spin 1.3s ease-in-out infinite;
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+

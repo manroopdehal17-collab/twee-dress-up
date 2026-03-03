@@ -11,28 +11,42 @@
 <style>
     body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
 
-}
-</style>
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+</style>    
+
+<svg id= loader viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <circle class="spin" cx="400" cy="400" fill="none"
+    r="139" stroke-width="49" stroke="#f5adc7"
+    stroke-dasharray="287 1400"
+    stroke-linecap="round" />
+</svg>
+
 </head>
-<body>
-
- <div class="header">
+<body onload="loadbody()" style="margin:0;" id="myDiv">
+  <div id="loader"></div>
+ <div class="header" id="myDiv">
   <h1>Twee Dress Up</h1>
   <p>Figure out the perfect outfit!</p>
 </div> 
 
-<div class="navbar">
+<div id="myDiv" class="navbar">
   <a href="#">Dress Up</a>
   <a href="#">History</a>
   <a href="#">How To Dress Twee</a>
   <a href="#" class="right">About Me</a>
 </div>
 
-<div class="row">
+<div id="myDiv" class="row">
   <div class="main">CLICK ON THE CLOTHING TO MAKE AN OUTFIT!</div>
 </div>
-<div class="game-container">
+<div id="myDiv" class="game-container">
   <div class="doll-area" id="dollArea">
     <a-scene id="scene" embedded>
     <a-assets>
@@ -163,7 +177,7 @@
       </a-scene>
 
 
-<div class="container">
+<div id="myDiv" class="container">
     <button class="title">Tops</button>
     <button class="title">Bottoms</button>
     <button class="title">Shoes</button>
@@ -232,11 +246,12 @@
       data-model="whiteshoes">
     </button>
 </div>
-
+<div id="myDiv" class="reset-container">
     <button onclick="resetclothes()" 
-    class="reset"
+    class="resetButton"
     id="resetButton">Reset Outfit
   </button>
+</div>
 
 </body>
 </html>
