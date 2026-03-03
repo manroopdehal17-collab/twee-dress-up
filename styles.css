@@ -104,3 +104,8 @@ color: rgb(124, 36, 90);
 .clothes:hover {
     background-color: rgb(124, 36, 90);
 }
+
+.reset {
+    margin-top: -1280px;
+    background-color: rgb(108, 120, 19);
+}
