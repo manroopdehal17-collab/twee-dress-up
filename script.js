@@ -77,9 +77,8 @@
                 hideAllpants()
                 hideAllshoes()
             }
-var loader;
 
-function showbody() {
+function loadbody() {
   loader = setTimeout(showPage, 3000);
 }
 

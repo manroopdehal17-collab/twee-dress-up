@@ -202,9 +202,5 @@ animation-duration: 1s
     transform-origin: center;
     animation: spin 1.3s ease-in-out infinite;
     position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s
   }
 

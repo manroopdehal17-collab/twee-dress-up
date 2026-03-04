@@ -19,34 +19,38 @@
     }
   }
 
+  #myDiv {
+    display: none;
+    }
+
 </style>    
 
 <svg id= loader viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
   <circle class="spin" cx="400" cy="400" fill="none"
     r="139" stroke-width="49" stroke="#f5adc7"
     stroke-dasharray="287 1400"
-    stroke-linecap="round" />
+    stroke-linecap="round">
 </svg>
 
 </head>
 <body onload="loadbody()" style="margin:0;" id="myDiv">
   <div id="loader"></div>
- <div class="header" id="myDiv">
+ <div class="header">
   <h1>Twee Dress Up</h1>
   <p>Figure out the perfect outfit!</p>
 </div> 
 
-<div id="myDiv" class="navbar">
+<div class="navbar">
   <a href="#">Dress Up</a>
   <a href="#">History</a>
   <a href="#">How To Dress Twee</a>
   <a href="#" class="right">About Me</a>
 </div>
 
-<div id="myDiv" class="row">
+<div class="row">
   <div class="main">CLICK ON THE CLOTHING TO MAKE AN OUTFIT!</div>
 </div>
-<div id="myDiv" class="game-container">
+<div class="game-container">
   <div class="doll-area" id="dollArea">
     <a-scene id="scene" embedded>
     <a-assets>
@@ -175,9 +179,10 @@
           orbit-controls="target: 0 2 -4; minDistance: 4; maxDistance: 5; initialPosition: 0 3 5; rotateSpeed: 0.5">
         </a-entity>
       </a-scene>
+    </div>
 
 
-<div id="myDiv" class="container">
+<div class="container">
     <button class="title">Tops</button>
     <button class="title">Bottoms</button>
     <button class="title">Shoes</button>
@@ -246,7 +251,7 @@
       data-model="whiteshoes">
     </button>
 </div>
-<div id="myDiv" class="reset-container">
+<div class="reset-container">
     <button onclick="resetclothes()" 
     class="resetButton"
     id="resetButton">Reset Outfit
