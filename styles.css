@@ -149,7 +149,7 @@ animation-duration: 1s
 }
 
 .container {
-    margin-top: -502px;
+    margin-top: -545px;
      margin-left: 440px;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -185,10 +185,10 @@ animation-duration: 1s
 
 .resetButton {
     background-color: rgb(108, 120, 19);
-    border: none;
+    border: black solid 1px;
     position: absolute;
-    margin-top: -80px;
-    margin-left: 20px;
+    margin-top: 20px;
+    margin-left: 50px;
     scale: 1.5;
     color: #f5adc7;
     position: relative;
