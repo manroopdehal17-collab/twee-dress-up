@@ -9,9 +9,23 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
+    @-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
   body html {
     height: 100%;
     margin: 0;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
   }
   .bgimg {
     background-image: url('https://i.pinimg.com/1200x/72/87/59/728759150b0ce3fe712e6e3a8c89489e.jpg');
@@ -22,17 +36,29 @@
     color: rgb(251, 163, 195);
     font-family: "Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif";
     font-size: 25px;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
   }
   .topleft {
     position: absolute;
     top: 0;
     left: 16px;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
   }
   
   .bottomleft {
     position: absolute;
     bottom: 0;
     left: 16px;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
   }
   
   .middle {
@@ -41,11 +67,19 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
   }
   
   hr {
     margin: auto;
     width: 40%;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
   }
 </style>
 <body>
