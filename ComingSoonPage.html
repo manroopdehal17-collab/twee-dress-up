@@ -19,7 +19,7 @@
   to{ bottom:0; opacity:1 }
 }
 
-  body html {
+  body, html {
     height: 100%;
     margin: 0;
     -webkit-animation-name: animatebottom;
@@ -27,8 +27,47 @@
     animation-name: animatebottom;
     animation-duration: 1s
   }
-  .bgimg {
+
+  .body {
     background-image: url('https://i.pinimg.com/1200x/72/87/59/728759150b0ce3fe712e6e3a8c89489e.jpg');
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(108, 120, 19);
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+
+.navbar a {
+    float:left;
+    display:block;
+    color: #f5adc7;
+    text-align: center;
+    padding: 3vh 2vw;
+    text-decoration: none;
+    position: relative;
+     }
+
+ .navbar a.right {
+    float: right;
+    position: relative;
+    }
+
+ .navbar a:hover {
+    background-color: rgb(97, 108, 16);
+    color: rgb(124, 36, 90);
+    position: relative;
+    }
+
+  .bgimg {
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -41,6 +80,7 @@
     animation-name: animatebottom;
     animation-duration: 1s
   }
+
   .topleft {
     position: absolute;
     top: 0;
@@ -82,7 +122,15 @@
     animation-duration: 1s
   }
 </style>
-<body>
+<body class="body">
+    
+    <div class="navbar">
+      <a href="index.html">Dress Up</a>
+      <a href="ComingSoonPage.html">History</a>
+      <a href="ComingSoonPage.html">How To Dress Twee</a>
+      <a href="ComingSoonPage.html" class="right">About Me</a>
+    </div>
+
 <div class="bgimg">
   <div class="topleft">
     <p>TWEE</p>
